@@ -1,0 +1,22 @@
+{
+  "name": "Agency ai Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "forwardPorts": [5173],
+  "postCreateCommand": "cd Frontend && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "dsznajder.es7-react-js-snippets",
+        "formulahendry.auto-rename-tag",
+        "tonybaloney.vscode-pets",
+        "enkia.tokyo-night",
+        "Zarifprogrammer.tailwind-snippets"
+      ]
+    }
+  }
+}
