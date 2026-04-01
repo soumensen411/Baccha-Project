@@ -2,7 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://soumensen411.github.io/baccha-project",
+  "homepage": "https://soumensen411.github.io/Baccha-Project",
   "type": "module",
   "scripts": {
     "dev": "vite",
