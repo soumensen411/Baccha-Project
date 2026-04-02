@@ -14,6 +14,12 @@ That’s it.
 Simple. Small. Baccha. But still cool 😎.
 
 ---
+🔗 Live Demo:
+<a href="https://soumensen411.github.io/Baccha-Project/" target="_blank" rel="noopener noreferrer">
+https://soumensen411.github.io/Baccha-Project/
+</a>
+
+---
 
 ## ✨ Features
 
