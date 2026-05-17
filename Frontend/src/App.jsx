@@ -7,12 +7,12 @@ import { Route, Routes } from 'react-router-dom'
 import { Authcontext } from './Authcontext'
 
 const App = () => {
-  const [user, setUser] = useState({name:"",email:"",isAuth:false});
-  function login({name,email}) {
-    setUser({ name: name, email:email,isAuth: true })
+  const [user, setUser] = useState({name:"",email:"",img_url:"",isAuth:false});
+  function login({name,email,img_url}) {
+    setUser({ name: name, email:email, img_url: img_url, isAuth: true })
   }
   function logout(){
-    setUser({name:"",isAuth:false})
+    setUser({name:"",email:"",img_url:"",isAuth:false})
   }
   return (
     <div>
