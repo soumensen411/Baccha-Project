@@ -5,6 +5,8 @@ import Login from './components/Login'
 import Profile from './components/Profile'
 import { Route, Routes } from 'react-router-dom'
 import { Authcontext } from './Authcontext'
+import { signOut } from 'firebase/auth'
+import { auth } from './Firebase/firebase.init'
 
 const App = () => {
   const [user, setUser] = useState({name:"",email:"",img_url:"",isAuth:false});
@@ -12,7 +14,14 @@ const App = () => {
     setUser({ name: name, email:email, img_url: img_url, isAuth: true })
   }
   function logout(){
-    setUser({name:"",email:"",img_url:"",isAuth:false})
+    signOut(auth)
+      .then(() => {
+        setUser({name:"",email:"",img_url:"",isAuth:false})
+      })
+      .catch((error) => {
+        console.error('Sign-out error:', error)
+        setUser({name:"",email:"",img_url:"",isAuth:false})
+      })
   }
   return (
     <div>

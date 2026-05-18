@@ -13,8 +13,8 @@ const Profile = () => {
 </div>
   </figure>
   <div className="card-body">
-    <h2 className="card-title ">{user.isAuth?(<h2> Name: {user.name}</h2>):(<h2>you are not loged in yet!</h2>)}</h2>
-    <p>{user.isAuth && (<p>Email: {user.email}</p>)}</p>
+    <span className="card-title ">{user.isAuth?(<h2> Name: {user.name}</h2>):(<h2>you are not loged in yet!</h2>)}</span>
+    <span>{user.isAuth && (<p>Email: {user.email}</p>)}</span>
     <div className="card-actions justify-end">
       {user.isAuth && (<button className="btn btn-primary" onClick={logout}>Log out</button>)}
     </div>
